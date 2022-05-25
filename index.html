@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <script>
-            function test(){
-                //notify reader last known time for changes
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script> 
+            function lastModified(){
+                 
+                //notify last changes.
                 window.alert("Hi! last update to this page was at " + document.lastModified);
             }
+            
+            
         </script>
+    
     </head>
-    <body onload="test()">
-      <p id="root">
-        <ul>
-            <a href="https://drive.google.com/file/d/1U0uftuRFJLbzfVXBc96PNC8KiZdP392F/view?usp=sharing">CV</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </ul>
-    </p>
+    <body onload="lastModified()">
+    
+        <div class="jumbotron text-center">
+            <h1>Good Day to you!</h1>
+            <p></p>
+        </div>      
+    
+        <div class="container-fluid">
+        <!---->
+            <p id="root">
+                <ul class="list">
+                    <li><a href="https://drive.google.com/file/d/1U0uftuRFJLbzfVXBc96PNC8KiZdP392F/view?usp=sharing">CV</a>
+                    </li>
+                    
+                </ul>
+            </p>
+            
+        </div>
+    
     </body>
 </html>
